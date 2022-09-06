@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kawan</string>
+    <string name="read_more">Selengkapnya</string>
+    <string name="read_less">Sedikit</string>
+</resources>
