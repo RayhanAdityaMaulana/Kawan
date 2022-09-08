@@ -14,9 +14,6 @@
             android:name=".DetailKulinerJamsitActivity"
             android:exported="true" />
         <activity
-            android:name=".DetailKulinerEsDurianGantiNanLamoActivity"
-            android:exported="true" />
-        <activity
             android:name=".DetailKulinerWarkopNanYoActivity"
             android:exported="true" />
         <activity
@@ -24,12 +21,6 @@
             android:exported="true" />
         <activity
             android:name=".DetailKulinerPauhPiamanActivity"
-            android:exported="true" />
-        <activity
-            android:name=".DetailKulinerKatupekPitalahActivity"
-            android:exported="true" />
-        <activity
-            android:name=".DetailKulinerEsDurianIkoGantinyoActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DetailKulinerKatupekPitalahActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerEsDurianIkoGantinyoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerEsDurianGantiNanLamoActivity"
+            android:exported="true" />
         <activity
             android:name=".DetailKulinerLamunOmbakActivity"
             android:exported="true" />
