@@ -55,4 +55,6 @@ dependencies {
 
     //Load Image From URL
     implementation("io.coil-kt:coil-compose:2.2.0")
+
+    implementation("com.github.scottyab:showhidepasswordedittext:0.8")
 }
