@@ -86,15 +86,15 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp">
 
-                <EditText
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/background"
-                    android:hint="masukan password.."
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="masukan e-mail"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:inputType="textPassword"
-                    android:padding="10dp" />
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"/>
             </LinearLayout>
 
             <TextView
