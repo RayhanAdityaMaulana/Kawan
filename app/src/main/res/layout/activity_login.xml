@@ -94,7 +94,7 @@
                     android:hint="masukan e-mail"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:inputType="textEmailAddress"
+                    android:inputType="textVisiblePassword"
                     android:padding="10dp"/>
             </LinearLayout>
 

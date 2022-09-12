@@ -15,7 +15,13 @@
             android:exported="true" />
         <activity
             android:name=".DetailKulinerWarkopNanYoActivity"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".DetailKulinerSateDDActivity"
             android:exported="true" />
@@ -37,19 +43,12 @@
         <activity
             android:name=".MoreHighlightWisataActivity"
             android:exported="true" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
     </application>
 
