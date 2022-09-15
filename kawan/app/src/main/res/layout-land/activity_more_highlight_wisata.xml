@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreHighlightWisataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/titleHighlight"
+            android:orientation="vertical"
+            android:background="@color/bluesweet" >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="Highlight Wisata"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleHighlight"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:rowCount="1"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false" >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/rantiang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:id="@+id/card1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/lubuakrantiang" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img1">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp">
+
+                                    <TextView
+                                        android:id="@+id/txtrantiang"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:text="Air Terjun Lubuk Rantiang"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtrantiang"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame1"
+                                    android:layout_marginTop="30dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tampuruang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/lubuaktampuruang" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img2">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txttampuruang"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Air Terjun Lubuk Tampuruang"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txttampuruang"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame2"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hitam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/lubuakhitam" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img3">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txthitam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Air Terjun Lubuk Hitam"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txthitam"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame3"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time_red" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Tutup"
+                                        android:textColor="@color/red" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/niagara"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/bendunganniagara" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/img4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <RelativeLayout
+                                    android:id="@+id/frame4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtniagara"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Bendungan Niagara"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtniagara"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_below="@+id/frame4"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/time4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time"/>
+                                    <TextView
+                                        android:id="@+id/txtbuka4"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/jamsit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/jamsit" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img5">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtjamsit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Jembatan Siti Nurbaya"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtjamsit"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame5"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/masjid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/masjidrayasumbar" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img6">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtmasjid"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Masjid Raya Sumatera Bara"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtmasjid"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame6"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pantaipadang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pantaipadang" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/img7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <RelativeLayout
+                                    android:id="@+id/frame7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtpantaipadang"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Pantai Padang"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtpantaipadang"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame7"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pantaiairmanis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pantaiairmanis" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/img8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <RelativeLayout
+                                    android:id="@+id/frame8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtpantaiairmanis"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Pantai Air Manis"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtpantaiairmanis"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame8"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time_red" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Tutup"
+                                        android:textColor="@color/red" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pasumpahan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pulaupasumpahan" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/img9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <RelativeLayout
+                                    android:id="@+id/frame9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtpasumpahan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:text="Pulau Pasumpahan"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtpasumpahan"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_below="@+id/frame9"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/time9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time"/>
+                                    <TextView
+                                        android:id="@+id/txtbuka9"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sirandah"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/card10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/pulausirandah" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img10">
+
+                                <RelativeLayout
+                                    android:id="@+id/frame10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/txtsirandah"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="Pulau Sirandah"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtkm10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txtsirandah"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="5.0 km"
+                                        android:textColor="#8A8A8A" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/frame10"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/time10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_time" />
+
+                                    <TextView
+                                        android:id="@+id/txtbuka10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@+id/time1"
+                                        android:text="Buka"
+                                        android:textColor="@color/bluesweet" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F2F2F2"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".jamsit">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:id="@+id/imageslider"
+                app:iss_selected_dot="@drawable/indicator_selected"
+                app:iss_unselected_dot="@drawable/indicator_unselected"
+                tools:ignore="MissingConstraints"/>
+            <RelativeLayout
+                android:id="@+id/lyr3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:background="@drawable/background"
+                android:layout_below="@id/imageslider">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/txtjamsit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jembatan Siti Nurbaya"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtjamsit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtjamsit"
+                        android:layout_marginTop="10dp"
+                        android:text="5.0 km"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtjamsit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtjamsit"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/txtjamsit1"
+                        android:text="dari lokasi anda"
+                        android:textColor="#8A8A8A" />
+                    <RelativeLayout
+                        android:id="@+id/txtjamsit3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtjamsit2"
+                        android:layout_marginTop="16dp">
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:text="@string/jamsit"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:colorClickableText="@color/bluesweet"
+                            app:trimCollapsedText="@string/text1"
+                            app:trimExpandedText="@string/text1"
+                            app:trimMode="trimModeLength" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/txtjamsit4"
+                        android:layout_below="@id/txtjamsit3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_putih">
+                            <RelativeLayout
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:id="@+id/cardtiket"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/tiket"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_ticket_svgrepo_com"/>
+                                    <TextView
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txttiket"
+                                        android:layout_toRightOf="@+id/tiket"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ticket"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                    <TextView
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txttiket1"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gratis"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:id="@+id/cardmotor"
+                                    android:layout_below="@+id/cardtiket"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/motor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_motorcycle_svgrepo_com"/>
+                                    <TextView
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txtmotor"
+                                        android:textColor="@color/black"
+                                        android:layout_toRightOf="@+id/motor"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Parkir roda dua"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                    <TextView
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:textColor="@color/black"
+                                        android:id="@+id/txtmotor1"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 2.000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:id="@+id/cardmobil"
+                                    android:layout_below="@+id/cardmotor"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_centerVertical="true"
+                                        android:id="@+id/mobil"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_car_svgrepo_com__1_"/>
+                                    <TextView
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txtmobil"
+                                        android:layout_toRightOf="@+id/mobil"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Parkir roda empat"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"/>
+                                    <TextView
+                                        android:textColor="@color/black"
+                                        android:layout_centerVertical="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/txtmobil1"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 5.000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyrdayatarik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/lyr3"
+                android:background="@drawable/background">
+
+                <RelativeLayout
+                    android:id="@+id/dayatarik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:id="@+id/txtdayatarik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Daya Tarik Jembatan Siti Nurbaya"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/dayatarik1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtdayatarik"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgdayatarik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtdayatarik1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgdayatarik"
+                            android:text="View dari Atas Jembatan"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/dayatarik2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dayatarik1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgdayatarik2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtdayatarik2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgdayatarik2"
+                            android:text="Dekat dengan Tempat Wisata Sekitar"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/dayatarik3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dayatarik2"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgdayatarik3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtdayatarik3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgdayatarik3"
+                            android:text="Mencicipi Kuliner Khas"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyraktivitas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/lyrdayatarik"
+                android:background="@drawable/background">
+
+                <RelativeLayout
+                    android:id="@+id/aktivitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:id="@+id/txtaktivitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aktivitas yang dapat dilakukan"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/aktivitas1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtaktivitas"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgaktivitas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtaktivitas1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgaktivitas"
+                            android:text="Melihat lampu disekitaran jembatan"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/aktivitas2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aktivitas1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgaktivitas2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtaktivitas2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgaktivitas2"
+                            android:text="Spot foto yang keren"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/aktivitas3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aktivitas2"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgaktivitas3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_dot_grey" />
+
+                        <TextView
+                            android:id="@+id/txtaktivitas3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/imgaktivitas3"
+                            android:text="Mencoba kuliner yang khas"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/operasional"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/lyraktivitas"
+                android:background="@drawable/background">
+                <RelativeLayout
+                    android:id="@+id/txtoperasional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+                    <RelativeLayout
+                        android:id="@+id/txtoperasional1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Operasional"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@+id/txtoperasional1"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp">
+                        <RelativeLayout
+                            android:id="@+id/lyrsenin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:id="@+id/senin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Senin - Minggu"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/tutup"
+                                android:gravity="end"
+                                android:layout_toRightOf="@+id/senin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="24 Jam"
+                                android:textColor="@color/grey"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/infolokasi"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/operasional">
+
+                <ImageView
+                    android:id="@+id/img33"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:background="@drawable/background"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/img33"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:id="@+id/txtinfolokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Info Lokasi"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                    <RelativeLayout
+                        android:id="@+id/lyrinfolokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtinfolokasi"
+                        android:layout_marginTop="16dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="127dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/maps_jamsit" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lyrinfolokasi1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lyrinfolokasi"
+                        android:layout_marginTop="16dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/background_putih">
+
+                                <ImageView
+                                    android:id="@+id/road"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="12dp"
+                                    android:src="@drawable/ic_road_sign_svgrepo_com" />
+
+                                <TextView
+                                    android:id="@+id/txtroad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_toRightOf="@+id/road"
+                                    android:text="Lihat pada peta"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:id="@+id/imgarrow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="12dp"
+                                    android:src="@drawable/ic_ic_narrow" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

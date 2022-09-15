@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F2F2F2"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".airterjunlubuakhitam">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:id="@+id/imageslider"
+                app:iss_selected_dot="@drawable/indicator_selected"
+                app:iss_unselected_dot="@drawable/indicator_unselected"
+                tools:ignore="MissingConstraints"/>
+            <RelativeLayout
+                android:id="@+id/lyr3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageslider"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:id="@+id/txtpulausirandah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Pulau Sirandah"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtpulausirandah1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtpulausirandah"
+                        android:layout_marginTop="10dp"
+                        android:text="5.0 km"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtpulausirandah2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtpulausirandah"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/txtpulausirandah1"
+                        android:text="dari lokasi anda"
+                        android:textColor="#8A8A8A" />
+
+                    <RelativeLayout
+                        android:id="@+id/txtpulausirandah3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtpulausirandah2"
+                        android:layout_marginTop="16dp">
+
+                        <com.borjabravo.readmoretextview.ReadMoreTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:justificationMode="inter_word"
+                            android:text="@string/sirandah"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:colorClickableText="@color/bluesweet"
+                            app:trimCollapsedText="@string/text1"
+                            app:trimExpandedText="@string/text1"
+                            app:trimMode="trimModeLength" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/txtpulausirandah4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtpulausirandah3"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/background_putih">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="16dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <RelativeLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:text="Paket Wisata 1 Hari"
+                                            android:textColor="@color/black"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <ImageButton
+                                            android:id="@+id/expandBtn"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/white"
+                                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/expandcard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="16dp"
+                                                android:text="Harga Paket Wisata"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_marginTop="12dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp. 520.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp. 520.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp. 520.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp. 520.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp. 520.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <RelativeLayout
+                                                    android:id="@+id/note"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_marginBottom="16dp">
+
+                                                    <TextView
+                                                        android:id="@+id/txtnote"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Note : "
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp"
+                                                        android:textStyle="bold" />
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_toRightOf="@+id/txtnote"
+                                                        android:orientation="vertical">
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="5dp"
+                                                            android:orientation="horizontal">
+
+                                                            <ImageView
+                                                                android:layout_width="8dp"
+                                                                android:layout_height="20dp"
+                                                                android:layout_gravity="center"
+                                                                android:src="@drawable/line_lainnya" />
+
+                                                            <TextView
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_gravity="center"
+                                                                android:layout_marginLeft="5dp"
+                                                                android:text="Anak usia di bawah 2 Tahun Gratis"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="12sp" />
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="5dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal">
+
+                                                            <ImageView
+                                                                android:layout_width="8dp"
+                                                                android:layout_height="20dp"
+                                                                android:src="@drawable/line_lainnya" />
+
+                                                            <TextView
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_marginLeft="5dp"
+                                                                android:text="Anak Usia 4-10 Tahun bayar 50%, diatas Umur 10 tahun keatas sama dengan harga dewasa"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="12sp" />
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </RelativeLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian"/>
+
+                                            <TextView
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jadwal Perjalanan"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold"/>
+                                            <LinearLayout
+                                                android:layout_marginTop="12dp"
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="08.30 - 09.00 berangkat dari dermaga Sungai Pisang Bungus Teluk Kabung"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="09.00 - 09.20 Sampai di Pulau Sirandah, istirahat, foto shopp (selfie)"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="09.40 - 12.00 Aktivitas Air (snorkling, berenang, foto bawah air )"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="12.30 - 13.30 Makan Siang / Sholat Zuhur (nasi kotak + air mineral)"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="14.00 - 16.00 Mengelilingi Pulau, menuju Lokasi Pulau Penyu, Dilanjutkan aktifitas air, berenang (bebas sampai kembali ke kembali ke dermaga Sungai Pisang)"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginLeft="16dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="16.00 - 16.20 Dilanjutkan perjalanan untuk kembali ke dermaga Sungai Pisang atau Bungus"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian"/>
+
+                                            <TextView
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Fasilitas Termasuk"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold"/>
+
+                                            <LinearLayout
+                                                android:layout_marginTop="12dp"
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Transportasi kapal ke pulau PP"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Makan Siang Nasi Bungkus / Kotak dan Air Mineral"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Alat Snorkeling "/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Foto Underwater"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Tiket Masuk ke Pulau Sirandah"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian"/>
+
+                                            <TextView
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Jadwal Berangkat"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold"/>
+
+                                            <LinearLayout
+                                                android:layout_marginTop="12dp"
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Senin s/d Minggu (Setiap Hari)"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Jam berangkat antar jam : 08.30 / di sesuaikan kedatangan Tamu"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Jam pulang antar jam : 16.00 - 17.00 Sore"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian"/>
+
+                                            <TextView
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Paket Tidak Termasuk"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold"/>
+
+                                            <LinearLayout
+                                                android:layout_marginTop="12dp"
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Kartu Memori untuk File Foto (tidak disediakan)"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Transportasi Dari Daerah Masing - Masing / Dari Kota Padang Ke Dermaga"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Pengeluaran pribadi"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian"/>
+
+                                            <TextView
+                                                android:layout_marginTop="16dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Syarat dan ketentuan"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/black"
+                                                android:textStyle="bold"/>
+
+                                            <LinearLayout
+                                                android:layout_marginTop="12dp"
+                                                android:orientation="vertical"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Untuk Paket Satu Hari Tour minimal 2 orang tetap berangkat"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:layout_marginLeft="16dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <ImageView
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                    <TextView
+                                                        android:layout_marginLeft="8dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="12sp"
+                                                        android:textColor="@color/black"
+                                                        android:text="Jika ada tambahan ke pulau lain, tambah biaya antara 25 ribu - 40 ribu / orang / Pulau"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:layout_marginTop="16dp"
+                                                android:id="@+id/expandbtn1"
+                                                android:background="@color/white"
+                                                android:layout_gravity="end"
+                                                android:layout_width="35dp"
+                                                android:layout_height="35dp"
+                                                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/txtpulausirandah5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtpulausirandah4"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_putih">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="16dp">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardElevation="0dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <RelativeLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:text="Paket Menginap"
+                                            android:textColor="@color/black"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold" />
+
+                                        <ImageButton
+                                            android:background="@color/white"
+                                            android:id="@+id/expandBtn2"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/expandcard1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@drawable/line_pencarian" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="16dp"
+                                                android:text="Paket Menginap Pulau Sirandah Ada 4 Tipe"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_marginTop="12dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:text="A. Paket Camping"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="12sp" />
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="30dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:text="Harga Paket"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 4 - 6 orang : Rp 500.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 7 - 8 orang : Rp 450.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 9 orang - up : Rp 350.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:text="B. Kamar Warna Warni (Memiliki 9 Kamar)"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="12sp" />
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="30dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:text="Harga Paket"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 Orang : Rp 1.220.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 3 - 4 Orang : Rp 920.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 5 - 7 orang : Rp 770.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 8 - 10 orang : Rp 670.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 10 - Up : Rp 600.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="10dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_gravity="center"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Note :"
+                                                        android:textStyle="bold"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                    <TextView
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Setiap kamar maksimal 4 orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp"/>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:text="C. Kamar Kayu (Memiliki 9 kamar include AC dan Kipas angin)"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="12sp" />
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="30dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:text="Harga Paket"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp 1.350.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 3 - 4 orang : Rp 1.050.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 5 - 7orang : Rp 900.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 8 - 10 orang : Rp 850.000"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 10 - Up : Rp 800.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_marginLeft="12dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:text="D. Type Packbacker / Kamar ekonomi"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="12sp" />
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="30dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:text="Harga Paket"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 2 orang : Rp 700.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 3 - 4 orang : Rp 600.000/ orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 5 - 6 orang : Rp 550.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 7 - 10 orang : Rp 500.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_marginTop="5dp"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:layout_marginBottom="16dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:src="@drawable/ic_dot_icon_icons_com_54014" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="8dp"
+                                                        android:text="Minimal 10 - Up orang : Rp 475.000 / orang"
+                                                        android:textColor="@color/black"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <View
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/line_pencarian"/>
+
+                                                    <TextView
+                                                        android:layout_marginTop="16dp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Fasilitas Termasuk"
+                                                        android:textSize="14sp"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"/>
+                                                    <LinearLayout
+                                                        android:layout_marginTop="12dp"
+                                                        android:orientation="vertical"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Transportasi dari Dermaga Sungai Pisang ke pulau (pulang pergi)"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="berangkat 1 Malam sesuai paket"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Makan 3 x (1 x makan siang, 1 x makan malam, 1 x sarapan pagi)"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Snorkeling"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Foto Underwater"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginLeft="12dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Kopi / Teh"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginLeft="12dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Air Mineral"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginLeft="12dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Pemandu (Kapten Kapal)"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginLeft="12dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="berangkat antara jam 08.30 - 09.00 / dikondisikan kedatangan tamu"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginLeft="12dp"
+                                                            android:layout_marginTop="5dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Pulang antara jam 10.00 - 11.00 hari kedua"/>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <View
+                                                        android:layout_marginTop="16dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/line_pencarian"/>
+
+                                                    <TextView
+                                                        android:layout_marginTop="16dp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Paket Tidak Termasuk"
+                                                        android:textSize="14sp"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"/>
+
+                                                    <LinearLayout
+                                                        android:layout_marginTop="12dp"
+                                                        android:orientation="vertical"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Transportasi Dari Daerah Masing - Masing / Dari Kota Padang Ke Dermaga"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Sewa tikar / alas pandan di Suwarnadwipa"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Pengeluaran pribadi"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Memori card (tidak disediakan)"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Aktifitas banana boat"/>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                    <View
+                                                        android:layout_marginTop="16dp"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/line_pencarian"/>
+
+                                                    <TextView
+                                                        android:layout_marginTop="16dp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Syarat dan ketentuan"
+                                                        android:textSize="14sp"
+                                                        android:textColor="@color/black"
+                                                        android:textStyle="bold"/>
+
+                                                    <LinearLayout
+                                                        android:layout_marginTop="12dp"
+                                                        android:orientation="vertical"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content">
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Untuk Paket Menginap minimal 2 orang tetap di berangkatkan"/>
+                                                        </LinearLayout>
+                                                        <LinearLayout
+                                                            android:layout_marginTop="5dp"
+                                                            android:layout_marginLeft="12dp"
+                                                            android:orientation="horizontal"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content">
+                                                            <ImageView
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:src="@drawable/ic_dot_icon_icons_com_54014"/>
+                                                            <TextView
+                                                                android:layout_marginLeft="8dp"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:textSize="12sp"
+                                                                android:textColor="@color/black"
+                                                                android:text="Jika ada tambahan ke pulau lain + biaya antara  Rp.25 ribu - 40 ribu/orang/ pulau"/>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:orientation="vertical"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+
+                                                    <ImageButton
+                                                        android:layout_marginTop="16dp"
+                                                        android:id="@+id/expandbtn2"
+                                                        android:background="@color/white"
+                                                        android:layout_gravity="end"
+                                                        android:layout_width="35dp"
+                                                        android:layout_height="35dp"
+                                                        android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lyr4"
+                android:layout_below="@id/lyr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_marginTop="7dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aktivitas yang dapat dilakukan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot_grey"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berenang di laut"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                        <LinearLayout
+                            android:layout_marginLeft="70dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot_grey"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Snorkeling"
+                                android:textColor="@color/grey_1"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot_grey"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bermain Watersport"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                        <LinearLayout
+                            android:layout_marginLeft="46dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot_grey"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Diving"
+                                android:textColor="@color/grey_1"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot_grey"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bermain Jetski"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                        <LinearLayout
+                            android:layout_marginLeft="78dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot_grey"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Banana boat"
+                                android:textColor="@color/grey_1"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot_grey"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Donut boat"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                        <LinearLayout
+                            android:layout_marginLeft="103dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot_grey"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mengunjungi pulau penyu"
+                                android:textColor="@color/grey_1"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lyr5"
+                android:layout_below="@id/lyr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_marginTop="7dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daya tarik Pulau sirandah"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_dot_grey"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lokasi yang Masih Asri"
+                            android:textColor="@color/grey_1"
+                            android:textSize="14sp"/>
+                        <LinearLayout
+                            android:layout_marginLeft="28dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_dot_grey"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Menawarkan Beragam Aktivitas"
+                                android:textColor="@color/grey_1"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lyr6"
+                android:layout_below="@id/lyr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_marginTop="7dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Operasional"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Senin - Minggu "
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="24 Jam"
+                            android:textSize="14sp"
+                            android:textColor="@color/grey_1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lyr7"
+                android:layout_below="@id/lyr6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_marginTop="7dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Info Lokasi"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="127dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardMaxElevation="0dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/maps_sirandah"/>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:background="@drawable/background_putih">
+                                <ImageView
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_road_sign_svgrepo_com"/>
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lihat pada peta"
+                                    android:layout_marginLeft="8dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"/>
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="12dp">
+                                    <ImageView
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_ic_narrow" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

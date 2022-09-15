@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.kawan">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".ForgotPassword3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKulinerJamsitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerEsDurianGantiNanLamoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerWarkopNanYoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerSateDDActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerPauhPiamanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerKatupekPitalahActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailKulinerEsDurianIkoGantinyoActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DetailKulinerLamunOmbakActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MoreHighlightWisataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ForgotPassword1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".More_Hightlight_Kuliner_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword2Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ProfilLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".pulaupasumpahan"
+            android:exported="false" />
+        <activity
+            android:name=".pencarian2"
+            android:exported="true" />
+        <activity
+            android:name=".pencarian1"
+            android:exported="true" />
+        <activity
+            android:name=".pulausirandah"
+            android:exported="true" />
+        <activity
+            android:name=".masjidrayasumbar"
+            android:exported="true" />
+        <activity
+            android:name=".jamsit"
+            android:exported="true" />
+        <activity
+            android:name=".bendunganniagara"
+            android:exported="true" />
+        <activity
+            android:name=".pantaiairmanis"
+            android:exported="true" />
+        <activity
+            android:name=".pantaipadang"
+            android:exported="true" />
+        <activity
+            android:name=".airterjunlubuakrantiang"
+            android:exported="true" />
+        <activity
+            android:name=".airterjunlubuakhitam"
+            android:exported="true" />
+        <activity
+            android:name=".airterjuntampuruang"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>

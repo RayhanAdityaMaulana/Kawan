@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/background.xml" value="0.124" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/button_background.xml" value="0.2105" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/button_shape.xml" value="0.2105" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_back.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_back2.xml" value="0.124" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_dot.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_hide.xml" value="0.2205" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_right.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_road.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_show.xml" value="0.181" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_time.xml" value="0.124" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/ic_time_red.xml" value="0.124" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/shape_button_edit_profile.xml" value="0.1995" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/shape_forgot.xml" value="0.136" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/shape_foto.xml" value="0.136" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/shape_white.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable-mdpi/shape_white2.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/back.xml" value="0.21" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/background.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/background_gambar.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/background_icon.xml" value="0.1125" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/background_putih.xml" value="0.1425" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/background_search.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/button.xml" value="0.114" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1435" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_border_dashed.xml" value="0.157" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_border_solid.xml" value="0.157" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_car_svgrepo_com__1_.xml" value="0.1625" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_clock.xml" value="0.157" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_clock_tutup.xml" value="0.1135" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_dot_grey.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_dot_icon_icons_com_54014.xml" value="0.215" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_hide.xml" value="0.2205" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_ic_adult.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_ic_arrow_back_black.xml" value="0.178" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_ic_child.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_motorcycle_svgrepo_com.xml" value="0.1625" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/ic_road_sign_svgrepo_com.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/indicator_selected.xml" value="0.185" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/indicator_unselected.xml" value="0.185" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/line.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/line_lainnya.xml" value="0.2" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/line_pencarian.xml" value="0.21" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/putih.xml" value="0.105" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/rounded.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/search.xml" value="0.178" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/shape_bt.xml" value="0.2105" />
+        <entry key="..\:/kawan/app/src/main/res/drawable/top.xml" value="0.1" />
+        <entry key="..\:/kawan/app/src/main/res/layout-land/activity_login.xml" value="0.18" />
+        <entry key="..\:/kawan/app/src/main/res/layout-land/activity_more_highlight_wisata.xml" value="0.3587002992731937" />
+        <entry key="..\:/kawan/app/src/main/res/layout-land/activity_more_hightlight_kuliner.xml" value="0.3587002992731937" />
+        <entry key="..\:/kawan/app/src/main/res/layout-land/activity_profil_layout.xml" value="0.3587002992731937" />
+        <entry key="..\:/kawan/app/src/main/res/layout-land/activity_register.xml" value="0.2836710369487485" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_airterjunlubuakhitam.xml" value="0.5" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_airterjunlubuakrantiang.xml" value="0.18193330519206416" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_airterjunsarasah.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_airterjuntampuruang.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_bendunganniagara.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_es_durian_ganti_nan_lamo.xml" value="0.17144078666096624" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_es_durian_iko_gantinyo.xml" value="0.17144078666096624" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_jamsit.xml" value="0.17144078666096624" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_katupek_pitalah.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_lamun_ombak.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_pauh_piaman.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_satedd.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_detail_kuliner_warkop_nan_yo.xml" value="0.2" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_forgot_password1.xml" value="0.25" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_forgot_password2.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_forgot_password3.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_jamsit.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_login.xml" value="0.1718024482904179" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main.xml" value="0.2843007915567282" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main10.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main11.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main3.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main4.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main5.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main6.xml" value="0.18" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main7.xml" value="0.33" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main8.xml" value="0.2" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_main9.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_masjidrayasumbar.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_more_highlight_wisata.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_more_hightlight_kuliner.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pantaiairmanis.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pantaipadang.xml" value="0.18" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pencarian1.xml" value="0.2" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pencarian2.xml" value="0.17272338606241983" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_profil_layout.xml" value="0.22" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pulaupasumpahan.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_pulausirandah.xml" value="0.18426678067550234" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_register.xml" value="0.17777777777777778" />
+        <entry key="..\:/kawan/app/src/main/res/layout/activity_splash_screen.xml" value="0.18426678067550234" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
