@@ -15,11 +15,10 @@ class DetailKulinerEsDurianGantiNanLamoActivity : AppCompatActivity() {
         val imageSlider = findViewById<ImageSlider>(R.id.imageSlider)
         val imageList = ArrayList<SlideModel>()
 
-        imageList.add(SlideModel(R.drawable.esduriangantinanlamo))
-        imageList.add(SlideModel(R.drawable.esduriangantinanlamo1))
-        imageList.add(SlideModel(R.drawable.esduriangantinanlamo2))
-        imageList.add(SlideModel(R.drawable.esduriangantinanlamo3))
-        imageList.add(SlideModel(R.drawable.esduriangantinanlamo4))
+        imageList.add(SlideModel(R.drawable.d_gantinanlamo1_x4))
+        imageList.add(SlideModel(R.drawable.d_gantinanlamo2_x4))
+        imageList.add(SlideModel(R.drawable.d_gantinanlamo3_x4))
+
 
         imageSlider.setImageList(imageList, ScaleTypes.FIT)
     }
